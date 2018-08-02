@@ -1,46 +1,49 @@
 package github.freewind.xiaohe.chardecoder
 
+import com.beust.klaxon.JsonObject
+import com.beust.klaxon.Klaxon
+import github.freewind.xiaohe.chardecoder.XiaoHeCharDecoder.charsAll
+import github.freewind.xiaohe.xhub.CharCodeInfo
+import github.freewind.xiaohe.xhub.Part
 import java.nio.charset.Charset
 
-private val classLoader = CharCode::class.java.classLoader
+private val classLoader = XiaoHeCharDecoder::class.java.classLoader
 
-fun readCharCodesFromClasspathFiles(path: String, level: CharLevel): List<CharCode> {
+fun readCharCodesFromClasspathFiles(path: String): List<CharCodeInfo> {
     val lines = classLoader.getResourceAsStream(path).reader(Charset.forName("UTF-8")).readLines().filterNot { it.isEmpty() }
-    return lines.map { line -> parse(line, level) }
+    return lines.map { line -> charCodeInfo(line) }
 }
 
-private fun parse(line: String, level: CharLevel): CharCode {
-    val char = line.substringBefore(":").trim().single()
-    val code = line.substringAfter(":").trim()
-    return CharCode(char, code, level)
-}
-
-enum class CharLevel {
-    Level1, Level2, Level3
-}
-
-data class CharCode(val char: Char, val code: String, val level: CharLevel) {
-    val pinyinCode = code.take(2).also {
-        if (it.length != 2) throw Exception("音码长度必须为2: ${it.length}")
-    }
+private fun charCodeInfo(line: String): CharCodeInfo {
+    val json = Klaxon().parseJsonObject(line.reader())
+    return CharCodeInfo(
+            char = json.string("char")!!.single(),
+            codes = json.array<String>("codes")!!.toList(),
+            parts = json.array<JsonObject>("parts")!!.map { obj ->
+                Part(
+                        name = obj.string("name")!!,
+                        code = obj.string("code")?.single()
+                )
+            }
+    )
 }
 
 object XiaoHeCharDecoder {
 
-    val charsLevel1 = readCharCodesFromClasspathFiles("gb2312单字音形码表-level1.txt", CharLevel.Level1)
+    val charsLevel1 = readCharCodesFromClasspathFiles("level1.txt")
 
-    val charsLevel2 = readCharCodesFromClasspathFiles("gb2312单字音形码表-level2.txt", CharLevel.Level2)
+    val charsLevel2 = readCharCodesFromClasspathFiles("level2.txt")
 
-    val charsLevel3 = readCharCodesFromClasspathFiles("新标准补充单字音形码表.txt", CharLevel.Level3)
+    val charsLevel3 = readCharCodesFromClasspathFiles("level3.txt")
 
     val charsAll = charsLevel1 + charsLevel2 + charsLevel3
 
-    fun findCode(char: Char): CharCode? {
+    fun findCode(char: Char): CharCodeInfo? {
         return charsAll.find { it.char == char }
     }
 
 }
 
 fun main(args: Array<String>) {
-
+    charsAll.forEach { println(it) }
 }

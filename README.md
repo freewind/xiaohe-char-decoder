@@ -6,13 +6,13 @@
 ```
 import github.freewind.xiaohe.chardecoder.XiaoHeCharDecoder
 
-XiaoHeCharDecoder.findCode('鹤')
+XiaoHeCharDecoder.findCode('黡')
 ```
 
 输出：
 
 ```
-CharCode(char = 鹤, code = hedn, level = Level1)
+CharCodeInfo(char=黡, codes=[yjih], parts=[Part(name=厂, code=i), Part(name=犬, code=null), Part(name=黑, code=h)])
 ```
 
 如果字没有找到，则返回`null`
@@ -26,7 +26,7 @@ repositories {
 }
 
 dependencies {
-    compile 'github.freewind:xiaohe-char-decoder:0.2.0'
+    compile 'github.freewind:xiaohe-char-decoder:0.3.0'
 }
 ```
 
