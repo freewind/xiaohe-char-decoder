@@ -1756,7 +1756,7 @@
 {"char" : "箩", "codes" : ["lov", "lovx"], "parts" : [{"code" : "v", "name" : ""}, {"name" : "罒"}, {"code" : "x", "name" : "夕"}]}
 {"char" : "骡", "codes" : ["lom", "lomx"], "parts" : [{"code" : "m", "name" : "马"}, {"name" : "田"}, {"name" : "幺"}, {"code" : "x", "name" : "小"}]}
 {"char" : "裸", "codes" : ["lop", "lopg"], "parts" : [{"code" : "p", "name" : "衤"}, {"code" : "g", "name" : "果"}]}
-{"char" : "落", "codes" : ["lac", "lack", "lcck", "lo", "lock"], "parts" : [{"code" : "c", "name" : "艹"}, {"name" : "氵"}, {"name" : "夂"}, {"code" : "k", "name" : "口"}]}
+{"char" : "落", "codes" : ["lo", "lock"], "parts" : [{"code" : "c", "name" : "艹"}, {"name" : "氵"}, {"name" : "夂"}, {"code" : "k", "name" : "口"}]}
 {"char" : "洛", "codes" : ["lod", "lodk"], "parts" : [{"code" : "d", "name" : "氵"}, {"name" : "夂"}, {"code" : "k", "name" : "口"}]}
 {"char" : "骆", "codes" : ["lomk"], "parts" : [{"code" : "m", "name" : "马"}, {"name" : "夂"}, {"code" : "k", "name" : "口"}]}
 {"char" : "络", "codes" : ["lcs", "lcsk", "losk"], "parts" : [{"code" : "s", "name" : "纟"}, {"name" : "夂"}, {"code" : "k", "name" : "口"}]}
