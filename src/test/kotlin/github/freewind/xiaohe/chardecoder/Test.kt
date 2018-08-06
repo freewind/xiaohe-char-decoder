@@ -11,7 +11,15 @@ class Test {
     @Test
     fun `get code of a char`() {
         assertThat(XiaoHeCharDecoder.findCode('鹤')).isEqualTo(
-                CharCodeInfo(char = '鹤', codes = listOf("hedn"), parts = listOf(Part(name = "丶", code = 'd'), Part(name = "フ"), Part(name = "ノ"), Part(name = "丨"), Part(name = "亠"), Part(name = "\uE82B"), Part(name = "鸟", code = 'n')))
+                CharCodeInfo(char = '鹤', codes = listOf("hedn"), parts = listOf(
+                        Part(name = "丶", code = 'd'),
+                        Part(name = "フ"),
+                        Part(name = "ノ"),
+                        Part(name = "丨"),
+                        Part(name = "亠"),
+                        Part(name = "\uE82B"),
+                        Part(name = "鸟", code = 'n')
+                ))
         )
     }
 
