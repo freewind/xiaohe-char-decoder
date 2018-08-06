@@ -1912,11 +1912,11 @@
 {"char" : "牧", "codes" : ["munw"], "parts" : [{"code" : "n", "name" : "牛"}, {"code" : "w", "name" : "攵"}]}
 {"char" : "穆", "codes" : ["muh", "muhp"], "parts" : [{"code" : "h", "name" : "禾"}, {"name" : "白"}, {"name" : "少"}, {"name" : "ノ"}, {"code" : "p", "name" : "ノ"}]}
 {"char" : "拿", "codes" : ["nar", "naru"], "parts" : [{"code" : "r", "name" : "人"}, {"name" : "一"}, {"name" : "口"}, {"code" : "u", "name" : "手"}]}
-{"char" : "哪", "codes" : ["nak", "neke", "nwk", "nake", "nwke"], "parts" : [{"code" : "k", "name" : "口"}, {"name" : "フ"}, {"name" : "一"}, {"name" : "一"}, {"name" : "ノ"}, {"code" : "e", "name" : "阝"}]}
-{"char" : "呐", "codes" : ["nakn", "nek", "nekn"], "parts" : [{"code" : "k", "name" : "口"}, {"code" : "n", "name" : "内"}]}
+{"char" : "哪", "codes" : ["nak", "nake"], "parts" : [{"code" : "k", "name" : "口"}, {"name" : "フ"}, {"name" : "一"}, {"name" : "一"}, {"name" : "ノ"}, {"code" : "e", "name" : "阝"}]}
+{"char" : "呐", "codes" : ["nakn"], "parts" : [{"code" : "k", "name" : "口"}, {"code" : "n", "name" : "内"}]}
 {"char" : "钠", "codes" : ["naj", "najn"], "parts" : [{"code" : "j", "name" : "钅"}, {"code" : "n", "name" : "内"}]}
-{"char" : "那", "codes" : ["na", "nwv", "nwve", "nave"], "parts" : [{"code" : "v", "name" : "フ"}, {"name" : "一"}, {"name" : "一"}, {"name" : "ノ"}, {"code" : "e", "name" : "阝"}]}
-{"char" : "娜", "codes" : ["nan", "nane", "non", "none"], "parts" : [{"code" : "n", "name" : "女"}, {"name" : "フ"}, {"name" : "一"}, {"name" : "一"}, {"name" : "ノ"}, {"code" : "e", "name" : "阝"}]}
+{"char" : "那", "codes" : ["na", "nave"], "parts" : [{"code" : "v", "name" : "フ"}, {"name" : "一"}, {"name" : "一"}, {"name" : "ノ"}, {"code" : "e", "name" : "阝"}]}
+{"char" : "娜", "codes" : ["nan", "nane"], "parts" : [{"code" : "n", "name" : "女"}, {"name" : "フ"}, {"name" : "一"}, {"name" : "一"}, {"name" : "ノ"}, {"code" : "e", "name" : "阝"}]}
 {"char" : "纳", "codes" : ["nas", "nasn"], "parts" : [{"code" : "s", "name" : "纟"}, {"code" : "n", "name" : "内"}]}
 {"char" : "氖", "codes" : ["ndq", "ndqn"], "parts" : [{"code" : "q", "name" : "气"}, {"code" : "n", "name" : "乃"}]}
 {"char" : "乃", "codes" : ["ndv", "ndvp"], "parts" : [{"code" : "v", "name" : "フ"}, {"code" : "p", "name" : "ノ"}]}
@@ -1932,7 +1932,7 @@
 {"char" : "恼", "codes" : ["ncx", "ncxk"], "parts" : [{"code" : "x", "name" : "忄"}, {"name" : "亠"}, {"name" : "乂"}, {"code" : "k", "name" : "凵"}]}
 {"char" : "闹", "codes" : ["nc", "ncmj"], "parts" : [{"code" : "m", "name" : "门"}, {"name" : "亠"}, {"code" : "j", "name" : "巾"}]}
 {"char" : "淖", "codes" : ["ncd", "ncdu"], "parts" : [{"code" : "d", "name" : "氵"}, {"name" : "丨"}, {"name" : "一"}, {"name" : "日"}, {"code" : "u", "name" : "十"}]}
-{"char" : "呢", "codes" : ["ne", "nekb", "nikb"], "parts" : [{"code" : "k", "name" : "口"}, {"name" : "尸"}, {"code" : "b", "name" : "匕"}]}
+{"char" : "呢", "codes" : ["ne", "nekb"], "parts" : [{"code" : "k", "name" : "口"}, {"name" : "尸"}, {"code" : "b", "name" : "匕"}]}
 {"char" : "馁", "codes" : ["nwu", "nwun"], "parts" : [{"code" : "u", "name" : "饣"}, {"name" : "ノ"}, {"name" : "⺍"}, {"code" : "n", "name" : "女"}]}
 {"char" : "内", "codes" : ["nw", "nwld"], "parts" : [{"code" : "l", "name" : "丨"}, {"name" : "フ"}, {"name" : "ノ"}, {"code" : "d", "name" : "丶"}]}
 {"char" : "嫩", "codes" : ["nf", "nfnw"], "parts" : [{"code" : "n", "name" : "女"}, {"name" : "束"}, {"code" : "w", "name" : "攵"}]}
