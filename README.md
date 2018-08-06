@@ -26,7 +26,7 @@ repositories {
 }
 
 dependencies {
-    compile 'github.freewind:xiaohe-char-decoder:0.3.2'
+    compile 'github.freewind:xiaohe-char-decoder:0.4.0'
 }
 ```
 
